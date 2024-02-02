@@ -1,0 +1,48 @@
+>>> print_square = __import__('4-print_square').print_square
+>>> print_square(4)
+####
+####
+####
+####
+>>> print("")
+
+>>> print_square(10)
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+##########
+>>> print("")
+
+>>> print_square(1)
+#
+>>> print("")
+
+>>> print_square(-1)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/home/mokeira/alx-higher_level_programming/0x07-python-test_driven_development/4-print_square.py", line 17, in print_square
+    raise ValueError("size must be >= 0")
+ValueError: size must be >= 0
+>>>  print_square(-1)
+  File "<stdin>", line 1
+    print_square(-1)
+    ^
+IndentationError: unexpected indent
+>>> except Exception as e:
+  File "<stdin>", line 1
+    except Exception as e:
+    ^
+SyntaxError: invalid syntax
+>>> print(e)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'e' is not defined
+>>> print("")
+
+>>> exit ()
