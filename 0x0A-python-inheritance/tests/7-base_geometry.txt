@@ -1,0 +1,45 @@
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+>>> bg = BaseGeometry()
+>>> bg.integer_validator("my_int", 12)
+>>> bg.integer_validator("width", 89)
+>>> bg.integer_validator("name", "John")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/home/mokeira/alx-higher_level_programming/0x0A-python-inheritance/7-base_geometry.py", line 21, in integer_validator
+    raise TypeError("{} must be an integer".format(name))
+TypeError: name must be an integer
+>>> print("[{}] {}".format(e.__class__.__name__, e))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'e' is not defined
+>>> bg.integer_validator("age", 0)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/home/mokeira/alx-higher_level_programming/0x0A-python-inheritance/7-base_geometry.py", line 23, in integer_validator
+    raise ValueError("{} must be greater than 0".format(name))
+ValueError: age must be greater than 0
+>>> print("[{}] {}".format(e.__class__.__name__, e))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'e' is not defined
+>>> bg.integer_validator("distance", -4)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "/home/mokeira/alx-higher_level_programming/0x0A-python-inheritance/7-base_geometry.py", line 23, in integer_validator
+    raise ValueError("{} must be greater than 0".format(name))
+ValueError: distance must be greater than 0
+>>> print("[{}] {}".format(e.__class__.__name__, e))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'e' is not defined
+>>> except Exception as e:
+  File "<stdin>", line 1
+    except Exception as e:
+    ^
+SyntaxError: invalid syntax
+>>>     print("[{}] {}".format(e.__class__.__name__, e))
+  File "<stdin>", line 1
+    print("[{}] {}".format(e.__class__.__name__, e))
+    ^
+IndentationError: unexpected indent
+>>> exit ()
