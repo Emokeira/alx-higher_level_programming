@@ -4,6 +4,6 @@ if (isNaN(x)) {
   console.log('Missing number of occurrences');
 } else {
   for (let index = 0; index < x; index++) {
-      console.log('C is fun');
-    }
+    console.log('C is fun');
+  }
 }
