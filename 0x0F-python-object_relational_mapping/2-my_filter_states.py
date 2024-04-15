@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-""" Lists all states with a name starting with N (upper N)
-from the database hbtn_0e_0_usa.
+"""
+Takes in an argument and sisplays all values in the states table of
+hbtn_0e_0_usa where the name matches the argument.
 """
 
 from sys import argv
@@ -15,5 +16,6 @@ if __name__ == "__main__":
             db=argv[3],
             charset='utf8')
     cur = db.cursor()
-    cur.execute("SELECT * FROM `states` ORDER BY `id`")
-    [print(state) for state in cur.fetchall() if stste[1][0] == "N"]
+    cur.execute("SELECT *\
+                FROM `states` WHERE BINARY `name` = '{}'".format(argv[4]))
+    [print(state) for state in cur.fetchall()]
